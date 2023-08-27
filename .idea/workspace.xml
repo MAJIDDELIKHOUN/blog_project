@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3134107f-eb4b-4a46-80ac-39d6a3689bec" name="Changes" comment="create github project">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account_app/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_app/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account_app/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_app/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog_app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog_app/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/post-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog_app/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/headerreferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/headerreferences.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +115,10 @@
       <workItem from="1692118300035" duration="1275000" />
       <workItem from="1692182637109" duration="2923000" />
       <workItem from="1692185585980" duration="8737000" />
-      <workItem from="1692198325680" duration="430000" />
+      <workItem from="1692198325680" duration="4006000" />
+      <workItem from="1692290371710" duration="13895000" />
+      <workItem from="1692651254322" duration="20752000" />
+      <workItem from="1693056221130" duration="3338000" />
     </task>
     <task id="LOCAL-00001" summary="create github project">
       <created>1692183800314</created>
@@ -116,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692185220002</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create github project">
+      <created>1692198990098</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692198990098</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create github project">
+      <created>1692199110257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692199110257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

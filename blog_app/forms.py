@@ -3,11 +3,16 @@ from .models import Contact_Us
 from django.core.validators import ValidationError
 
 
-class ContactUsForm(forms.Form):
-    name = forms.CharField(max_length=70)
-    subject = forms.CharField(max_length=70)
-    email = forms.EmailField()
-    body = forms.CharField()
+class ContactUsForm(forms.ModelForm):
+    class Meta:
+        model=Contact_Us
+        fields='__all__'
+
+
+    # name = forms.CharField(max_length=70,label='your name :')
+    # subject = forms.CharField(max_length=70, label=' your subject :')
+    # email = forms.EmailField(label='your email :')
+    # body = forms.CharField(label='your body :',widget=forms.Textarea)
 
     def clean(self):
         name = self.cleaned_data.get('name')

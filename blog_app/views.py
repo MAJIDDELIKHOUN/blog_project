@@ -1,11 +1,17 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .models import Article, Category, Comment, Contact_Us
 from django.core.paginator import Paginator
 from .forms import ContactUsForm
+from django.views.generic.list import ListView
+from django.views.generic.base import View
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import FormView
 
-
+from django.urls import reverse_lazy
 # Create your views here.
+
+
 def postdetail_view(request, slug):
     comments = Comment.objects.all()
     article = Article.objects.get(slug=slug)
@@ -17,13 +23,13 @@ def postdetail_view(request, slug):
     return render(request, 'blog_app/post-details.html', {'article': article, 'comments': comments})
 
 
-def postlist_view(request):
-    article = Article.objects.all()
-    paginator = Paginator(article, 2)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page((page_number))
-    return render(request, 'blog_app/post_list.html',
-                  {'article': page_obj})
+# def postlist_view(request):
+#     article = Article.objects.all()
+#     paginator = Paginator(article, 2)
+#     page_number = request.GET.get('page')
+#     page_obj = paginator.get_page((page_number))
+#     return render(request, 'blog_app/post_list.html',
+#                   {'article': page_obj})
 
 
 def categorydetail_view(request, slug):
@@ -44,16 +50,42 @@ def search_view(request):
     return render(request, 'blog_app/post_list.html', {'article': page_obj})
 
 
-def contactus_view(request):
-    if request.method == 'POST':
-        form = ContactUsForm(data=request.POST)
-        # name = request.POST.get('name')
-        # email = request.POST.get('email')
-        # subject = request.POST.get('subject')
-        # body = request.POST.get('body')
-        # Contact_Us.objects.create(name=name, email=email, subject=subject, body=body)
-        if form.is_valid():
-            return redirect('home_app:home')
-    else:
-        form = ContactUsForm()
-    return render(request, 'blog_app/contact.html', {'form': form})
+# def contactus_view(request):
+#     if request.method == 'POST':
+#         form = ContactUsForm(data=request.POST)
+#         if form.is_valid():
+#             # email = form.cleaned_data.get('email')
+#             # name = form.cleaned_data.get('name')
+#             # subject = form.cleaned_data.get('subject')
+#             # body = form.cleaned_data.get('body')
+#             # Contact_Us.objects.create(name=name, email=email, subject=subject, body=body)
+#             form.save()
+#             return redirect('home_app:home')
+#     else:
+#         form = ContactUsForm()
+#     return render(request, 'blog_app/contact.html', {'form': form})
+
+
+class PostListView(ListView):
+    context_object_name = 'article'
+    queryset = Article.objects.all()
+    model = Article
+    paginate_by = 2
+    template_name = 'blog_app/post_list.html'
+
+
+# class PostDetailView(DetailView):
+#     model = Article
+#     template_name = 'blog_app/post-details.html'
+
+
+class ContactUsFormView(FormView):
+    template_name = 'blog_app/contact.html'
+    form_class = ContactUsForm
+    success_url = reverse_lazy('home_app:home')
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.save()
+        return super().form_valid(form)
