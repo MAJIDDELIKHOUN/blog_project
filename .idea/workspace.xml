@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3134107f-eb4b-4a46-80ac-39d6a3689bec" name="Changes" comment="create github project">
+    <list default="true" id="3134107f-eb4b-4a46-80ac-39d6a3689bec" name="Changes" comment="update1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_app/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account_app/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_app/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account_app/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account_app/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog_app/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/post-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog_app/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog_app/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/headerreferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/headerreferences.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/includes/scriptsrefrences.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/scriptsrefrences.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,28 +49,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/programing/blog_project&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/programing/blog_project/staticfiles/assets/fonts",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programing\blog_project\staticfiles\assets\fonts" />
+      <recent name="E:\programing\blog_project\templates\admin" />
       <recent name="E:\programing\blog_project\templates\blog_app" />
       <recent name="E:\programing\blog_project\templates\includes" />
       <recent name="E:\programing\blog_project\staticfiles\assets\images" />
-      <recent name="E:\programing\blog_project\templates\account_app" />
-      <recent name="E:\programing\blog_project\templates\home_app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\programing\blog_project\staticfiles\assets\css" />
       <recent name="E:\programing\blog_project\templates" />
     </key>
   </component>
@@ -119,6 +121,8 @@
       <workItem from="1692290371710" duration="13895000" />
       <workItem from="1692651254322" duration="20752000" />
       <workItem from="1693056221130" duration="3338000" />
+      <workItem from="1693137056425" duration="5139000" />
+      <workItem from="1693229481263" duration="22232000" />
     </task>
     <task id="LOCAL-00001" summary="create github project">
       <created>1692183800314</created>
@@ -148,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692199110257</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update1">
+      <created>1693137150284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693137150284</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update1">
+      <created>1693137194936</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693137194936</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create github project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create github project" />
+    <MESSAGE value="update1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update1" />
   </component>
 </project>

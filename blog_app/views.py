@@ -1,14 +1,16 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponseRedirect
-from .models import Article, Category, Comment, Contact_Us
+from .models import Article, Category, Comment, Contact_Us, Like
 from django.core.paginator import Paginator
 from .forms import ContactUsForm
 from django.views.generic.list import ListView
 from django.views.generic.base import View
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import FormView
-
+from django.views.generic.edit import FormView, CreateView
+from django.views.generic.detail import DetailView
 from django.urls import reverse_lazy
+
+
 # Create your views here.
 
 
@@ -19,8 +21,9 @@ def postdetail_view(request, slug):
         body = request.POST.get('body')
         parent_id = request.POST.get('parent_id')
         Comment.objects.create(body=body, article=article, user=request.user, parent_id=parent_id)
-        return redirect(reverse('blog_app:article_detail', args=[slug]))
-    return render(request, 'blog_app/post-details.html', {'article': article, 'comments': comments})
+        return reverse('blog_app:article_detail', args=[slug])
+
+    return render(request, 'blog_app/post-details.html', {'article': article, 'comments': comments, })
 
 
 # def postlist_view(request):
@@ -89,3 +92,13 @@ class ContactUsFormView(FormView):
         # It should return an HttpResponse.
         form.save()
         return super().form_valid(form)
+
+
+def like(request, sluq, pk):
+    try:
+        like = Like.objects.get(article__slug=sluq, user__id=request.user.id)
+        like.delete()
+        return JsonResponse({'response':'unliked'})
+    except:
+        Like.objects.create(article_id=pk, user_id=request.user.id)
+        return JsonResponse({'response': 'liked'})
